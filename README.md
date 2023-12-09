@@ -1,3 +1,24 @@
+Based on : https://www.browserstack.com/docs/automate/selenium/getting-started/nodejs
+
+See : `browserstack.yml`
+
+```yml
+platforms:
+  # Hangs indefinitely
+  - os: android
+    osVersion: "5.0"
+    browserName: "android"
+    deviceName: "Motorola Moto X 2nd Gen"
+    realMobile: true
+```
+
+- Testing against this device/browser hangs indefinitely.
+- No session is created on BrowserStack.
+- No error is logged.
+- No timeout is triggered.
+
+------------
+
 # JestJS BrowserStack <img src="assets/browserstack.png" width=25 height=25> <img src="assets/jest.svg" width=25 height=25>
 
 JestJS integration with BrowserStack for E2E functional testing of UI using Selenium and [browserstack-node-sdk](https://www.npmjs.com/package/browserstack-node-sdk).
