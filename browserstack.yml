@@ -1,0 +1,19 @@
+userName: YOUR_USERNAME
+accessKey: YOUR_ACCESS_KEY
+
+projectName: BrowserStack Samples
+buildName: browserstack build
+buildIdentifier: '#${BUILD_NUMBER}'
+source: jest-js:sample-main:v1.0
+
+platforms:
+  # Hangs indefinitely
+  - os: android
+    osVersion: "5.0"
+    browserName: "android"
+    deviceName: "Motorola Moto X 2nd Gen"
+    realMobile: true
+parallelsPerPlatform: 1
+browserstackLocal: true
+networkLogs: true
+consoleLogs: errors
